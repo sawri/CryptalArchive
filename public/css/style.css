@@ -1,0 +1,101 @@
+
+.sec {
+  /* margin-top: 20px; */
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  /* margin-right: 10%;
+  margin-left: 10%; */
+}
+
+a {
+  color: #151515;
+}
+
+/* ICON & BANNER */
+
+#graphics {
+
+}
+
+@media screen and (max-width: 992px) {
+  .pagelistblock {
+    display: none;
+  }
+}
+/* LINK BOX */
+
+#links {
+
+}
+
+/* AD BOX */
+#ads {
+  padding-top: 0px;
+}
+
+.adbox {
+  /* border: 1px;
+  border-style: solid; */
+  width: 100%;
+  height: 50px;
+  background-color: #4D4C7D;
+  color: #D8B9C3;
+
+}
+
+/* ARCHIVE */
+#archive {
+  padding-bottom: 20px;
+}
+
+.comiclink {
+  color: #D8B9C3;
+}
+
+.comiclink:hover {
+  color: #827397;
+}
+
+.pagelistblock {
+  /* border: 1px;
+  border-style: solid; */
+  background-color: #4D4C7D;
+  border-radius: 10px;
+  /* box-shadow: 4px 4px 10px #000;
+  transition: all 500ms; */
+  color: white;
+}
+.pageblock {
+  /* border: 1px;
+  border-style: solid; */
+  background-color: #4D4C7D;
+  border-radius: 10px;
+  /* box-shadow: 4px 4px 10px #000;
+  transition: all 500ms; */
+  color: white;
+}
+
+/* PAGE */
+
+#navbuttons {
+  padding: 10px;
+  font-size: 20px;
+}
+#comicpage {
+  display: inline-block;
+  text-align: center;
+}
+
+.currentpage {
+  text-align: center;
+}
+
+.pagelinks {
+  color: #D8B9C3;
+}
+.pagelinks:hover {
+  color: #827397;
+}
