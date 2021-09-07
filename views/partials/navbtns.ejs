@@ -1,0 +1,16 @@
+<% const num = parseInt(pgNum); %>
+
+<div id="navbuttons">
+  <% if (pgNum != 1) { %>
+      <!-- First Page (won't show up on first page)-->
+      <a id="firstpage" class="pagelinks" style="text-align: left;" href="/pages/1">«</a>
+      <!-- Previous Page (won't show up on first page)-->
+      <a id="prevpage" class="pagelinks" href="/pages/<%= (num - 1) %>">Prev</a>
+  <% } %>
+  <% if (pgNum != pages) { %>
+      <!-- Next Page (won't show up on last page)-->
+      <a id="nextpage" class="pagelinks" href="/pages/<%= (num + 1) %>">Next</a>
+      <!-- Last Page (won't show up on last page)-->
+      <a id="lastpage" class="pagelinks" style="text-align: right;" href="/pages/<%= pages %>">»</a>
+  <% } %>
+</div>
