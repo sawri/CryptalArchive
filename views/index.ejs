@@ -1,7 +1,7 @@
 <%- include('partials/header'); -%>
+<%- include('partials/archive'); -%>
 
 <div style="text-align: center;">
-  <img class="img-fluid" src="/imgs/<%= pgNum %>.png" alt="">
   <div id="navbuttons">
     <!-- First Page (won't show up on first page)-->
     <% const num = parseInt(pgNum); %>
@@ -9,9 +9,22 @@
         <a id="firstpage" class="pagelinks" style="text-align: left;" href="/pages/1">«</a>
         <a id="prevpage" class="pagelinks" href="/pages/<%= (num - 1) %>">Prev</a>
     <% } %>
-    <% if (pgNum != 2) { %>
+    <% if (pgNum != pages) { %>
         <a id="nextpage" class="pagelinks" href="/pages/<%= (num + 1) %>">Next</a>
-        <a id="lastpage" class="pagelinks" style="text-align: right;" href="/pages/2">»</a>
+        <a id="lastpage" class="pagelinks" style="text-align: right;" href="/pages/<%= pages %>">»</a>
+    <% } %>
+  </div>
+  <img class="img-fluid" src="/imgs/<%= pgNum %>.png" alt="">
+  <div id="navbuttons">
+    <!-- First Page (won't show up on first page)-->
+    
+    <% if (pgNum != 1) { %>
+        <a id="firstpage" class="pagelinks" style="text-align: left;" href="/pages/1">«</a>
+        <a id="prevpage" class="pagelinks" href="/pages/<%= (num - 1) %>">Prev</a>
+    <% } %>
+    <% if (pgNum != pages) { %>
+        <a id="nextpage" class="pagelinks" href="/pages/<%= (num + 1) %>">Next</a>
+        <a id="lastpage" class="pagelinks" style="text-align: right;" href="/pages/<%= pages %>">»</a>
     <% } %>
   </div>
 </div>
