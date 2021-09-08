@@ -73,6 +73,7 @@ a {
 .pageblock {
   border: 1px;
   border-style: solid;
+  border-color: black;
   /* background-color: #4D4C7D; */
   border-radius: 10px;
   /* box-shadow: 4px 4px 10px #000;
