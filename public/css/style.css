@@ -13,7 +13,7 @@
 
 
 a {
-  color: #151515;
+  color: #58437f;
 }
 
 /* ICON & BANNER */
@@ -24,6 +24,9 @@ a {
 
 @media screen and (max-width: 992px) {
   .pagelistblock {
+    display: none;
+  }
+  .icon {
     display: none;
   }
 }
@@ -54,7 +57,7 @@ a {
 }
 
 .comiclink {
-  color: #D8B9C3;
+  color: #58437f;
 }
 
 .comiclink:hover {
@@ -64,17 +67,18 @@ a {
 .pagelistblock {
   border: 1px;
   border-style: solid;
-  background-color: #4D4C7D;
+  border-color: #b097dd;
+  background-color: #b097dd;
   border-radius: 10px;
   /* box-shadow: 4px 4px 10px #000;
   transition: all 500ms; */
-  color: white;
+  color: #58437f;
 }
 .pageblock {
   border: 1px;
   border-style: solid;
-  border-color: black;
-  /* background-color: #4D4C7D; */
+  border-color: #b097dd;
+  /* background-color: #c19eff; */
   border-radius: 10px;
   /* box-shadow: 4px 4px 10px #000;
   transition: all 500ms; */
@@ -97,7 +101,7 @@ a {
 }
 
 .pagelinks {
-  color: #000;
+  color: #58437f;
 }
 .pagelinks:hover {
   color: #827397;

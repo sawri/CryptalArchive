@@ -1,16 +1,15 @@
 <!-- ARCHIVE LIST--------------------------------------------------------------------------------------------------------------------------------------->
 <section id="archive" class="sec">
-<!-- probably want two columns, on mobile the page should take up the entire width with the navbar above -->
+
 <div class="container">
     <div class="row justify-content-between">
         <!-- Archive -->
         <div class="col-md-3 pagelistblock">
-            <!-- links go here -->
             <div id="archivelist">
               <!-- links go here -->
                 <p> Archive </p>
-
-                <% for (let i = 1; i < pages + 1; ++i) { %>
+                <!-- dynamic archive list -->
+                <% for (let i = 1; i <= pages; ++i) { %>
                   <a href="/pages/<%= i %>" class="comiclink"> <%= i %> </a><br>
                 <% } %>
             </div>
