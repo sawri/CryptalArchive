@@ -14,9 +14,18 @@ app.get('/', function(req,res) {
   res.render('index', {pgNum: "1", pages: pages});
 })
 
+app.get('/about', function(req, res) {
+  res.render('about');
+})
+
+app.get('/gallery', function(req, res) {
+  res.render('gallery');
+})
+
 app.get('/pages/:pageName', function(req, res) {
   const pgNum = req.params.pageName;
-  if (pgNum <= pages) {
+  if (pgNum <= pages && pgNum > 0) {
+    console.log(pgNum);
     res.render('index', {pgNum: pgNum, pages: pages});
   }
   else {

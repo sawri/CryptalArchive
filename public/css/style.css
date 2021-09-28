@@ -18,10 +18,6 @@ a {
 
 /* ICON & BANNER */
 
-#graphics {
-
-}
-
 @media screen and (max-width: 992px) {
   .pagelistblock {
     display: none;
@@ -29,11 +25,81 @@ a {
   .icon {
     display: none;
   }
+  .mobilelogo {
+    height: 80px;
+    width: auto;
+    margin: 0 5px 0 5px;
+    display: block;
+  }
+  .logobtn {
+    display: none;
+  }
 }
+@media (min-width: 993px) {
+  .navbtn {
+    background-color: black;
+    color: white !important;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    vertical-align: baseline;
+    padding-top: 25px !important;
+    margin: 0 5px 0 5px;
+  }
+
+  .navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .logobtn {
+    /* border-radius: 50%; */
+    height: 80px;
+    width: auto;
+    margin: 0 5px 0 5px;
+    vertical-align: baseline;
+  }
+  .mobilelogo {
+      display: none;
+    }
+
+}
+
 /* LINK BOX */
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.navbtn:hover {
+
+  animation: bounce 1s;
+
+}
+
+.nav-link {
+
+  padding-bottom: 0 !important;
+}
+
+.linkbox {
+  margin-bottom: 20px;
+  background-color: white;
+}
 
 #links {
-
+  margin-bottom: 100px;
 }
 
 /* AD BOX */
@@ -53,6 +119,7 @@ a {
 
 /* ARCHIVE */
 #archive {
+  margin-top: 100px;
   padding-bottom: 20px;
 }
 
@@ -64,22 +131,21 @@ a {
   color: #827397;
 }
 
-.pagelistblock {
+.adspace {
   border: 1px;
   border-style: solid;
   border-color: #b097dd;
   background-color: #b097dd;
-  border-radius: 10px;
+}
+
+.pagelistblock {
+  background-color: #b097dd;
   /* box-shadow: 4px 4px 10px #000;
   transition: all 500ms; */
   color: #58437f;
 }
 .pageblock {
-  border: 1px;
-  border-style: solid;
-  border-color: #b097dd;
-  /* background-color: #c19eff; */
-  border-radius: 10px;
+
   /* box-shadow: 4px 4px 10px #000;
   transition: all 500ms; */
   color: white;
@@ -87,9 +153,13 @@ a {
 
 /* PAGE */
 
+.btnsundercomic {
+  background-color: #b097dd;
+}
+
 #navbuttons {
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 #comicpage {
   display: inline-block;
