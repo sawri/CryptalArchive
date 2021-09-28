@@ -18,6 +18,7 @@ a {
 
 /* ICON & BANNER */
 
+/* PHONE SCREEN*/
 @media screen and (max-width: 992px) {
   .pagelistblock {
     display: none;
@@ -26,15 +27,27 @@ a {
     display: none;
   }
   .mobilelogo {
-    height: 80px;
-    width: auto;
+
+    width: 50%;
+    height: 50%;
     margin: 0 5px 0 5px;
-    display: block;
+
+    text-align: center;
   }
   .logobtn {
     display: none;
   }
+  .img-fluid {
+    max-width: 110%;
+  }
+  .adspace {
+    display: none;
+  }
+  .mobileads {
+    display: block;
+  }
 }
+/* DESKTOP */
 @media (min-width: 993px) {
   .navbtn {
     background-color: black;
@@ -58,7 +71,13 @@ a {
     margin: 0 5px 0 5px;
     vertical-align: baseline;
   }
-  .mobilelogo {
+  .navbar-brand {
+      display: none !important;
+    }
+    .adspace {
+      display: block;
+    }
+    .mobileads {
       display: none;
     }
     @keyframes bounce {
@@ -101,6 +120,38 @@ a {
 #links {
   margin-bottom: 100px;
 }
+
+/* -------------------------------------------------NEWS TICKER------------------------------------------------- */
+
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: #eee;
+}
+
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-150%, 0, 0); }
+}
+.hmove { animation: tickerh linear 15s infinite; }
+.hmove:hover { animation-play-state: paused; }
+
 
 /* AD BOX */
 #ads {
