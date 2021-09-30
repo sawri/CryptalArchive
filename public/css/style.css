@@ -37,14 +37,15 @@ a {
   .logobtn {
     display: none;
   }
-  .img-fluid {
-    max-width: 110%;
-  }
+
   .adspace {
     display: none;
   }
   .mobileads {
     display: block;
+  }
+  .sec {
+    padding: 0;
   }
 }
 /* DESKTOP */

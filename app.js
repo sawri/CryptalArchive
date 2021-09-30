@@ -25,7 +25,6 @@ app.get('/gallery', function(req, res) {
 app.get('/pages/:pageName', function(req, res) {
   const pgNum = req.params.pageName;
   if (pgNum <= pages && pgNum > 0) {
-    console.log(pgNum);
     res.render('index', {pgNum: pgNum, pages: pages});
   }
   else {
